@@ -1,0 +1,15 @@
+# ---------------------------------------------------------
+# Spring Actuator config
+# ---------------------------------------------------------
+
+# -- Cors config
+#endpoints.cors.allowed-origins=http://example.com
+#endpoints.cors.allowed-methods=GET,POST
+# -- Changes health path to 'status' instead of 'health'
+endpoints.health.path: /status
+# -- Sets a context path for actuator
+management.contextPath: /admin
+# -- Sets a different port for management
+#management.port: 8081
+# -- Enables/Disables actuator endpoints
+endpoints.enabled: true
