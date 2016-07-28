@@ -1,4 +1,4 @@
-package com.github.apycazo.forge.rest.core;
+package com.github.apycazo.forge.rest.core.domains;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;

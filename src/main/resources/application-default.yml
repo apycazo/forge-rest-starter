@@ -3,20 +3,9 @@
 # ---------------------------------------------------------
 logging.file: traces.log
 logging.pattern:
-  console: "%d{MMdd-HH:mm:ss}|%p -- %m%n"
+  console: "%d{MMdd-HH:mm:ss} %p -- %m%n"
 
-# ---------------------------------------------------------
-# Spring Actuator config
-# ---------------------------------------------------------
-
-# -- Cors config
-#endpoints.cors.allowed-origins=http://example.com
-#endpoints.cors.allowed-methods=GET,POST
-# -- Changes health path to 'status' instead of 'health'
-endpoints.health.path: /status
-# -- Sets a context path for actuator
-management.contextPath: /admin
-# -- Sets a different port for management
-#management.port: 8081
-# -- Enables/Disables actuator endpoints
-endpoints.enabled: true
+management.context-path: /admin
+info:
+  app : @project.artifactId@
+  version: @project.version@
