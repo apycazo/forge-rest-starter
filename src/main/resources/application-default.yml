@@ -6,6 +6,7 @@ logging.pattern:
   console: "%d{MMdd-HH:mm:ss} %p -- %m%n"
 
 management.context-path: /admin
+
 info:
   app : @project.artifactId@
   version: @project.version@

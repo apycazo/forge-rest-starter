@@ -51,7 +51,6 @@ public class RestTemplateConfig
         return rt;
     }
 
-
     @Bean(name = "forge::rest-template")
     @ConditionalOnMissingBean(AsyncRestTemplate.class)
     protected AsyncRestTemplate instanceAsyncRestTemplate()
