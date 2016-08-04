@@ -1,6 +1,7 @@
-package com.github.apycazo.forge.rest.test.RestServiceDemo;
+package com.github.apycazo.forge.rest.test.restServiceDemo;
 
-import com.github.apycazo.forge.rest.test.RestServiceDemo.sources.RestServiceDemo;
+import com.github.apycazo.forge.rest.test.restServiceDemo.sources.RestServiceDemo;
+import com.github.apycazo.forge.rest.test.restServiceDemo.sources.RestServiceDemoConfig;
 import com.jayway.restassured.RestAssured;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
@@ -24,6 +25,7 @@ import static org.hamcrest.Matchers.equalTo;
 @RunWith(SpringRunner.class)
 @SpringBootTest(
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
+        classes = RestServiceDemoConfig.class,
         properties = {"demo.rest-service.mapping:/api"}
 )
 public class RestServiceDemoTests
@@ -36,7 +38,7 @@ public class RestServiceDemoTests
     private String mapping;
 
     @Autowired(required = false)
-    protected RestServiceDemo rsd;
+    private RestServiceDemo rsd;
 
     @Before
     public void setup()

@@ -17,9 +17,8 @@ import java.io.IOException;
  */
 @Slf4j
 @Service
-public class Ops
+public class Manager
 {
-
     private final ObjectMapper mapper;
     private final ObjectMapper prettyMapper;
     @Autowired(required = false)
@@ -27,7 +26,7 @@ public class Ops
     @Autowired(required = false)
     private Reactor reactor;
 
-    public Ops ()
+    public Manager()
     {
         mapper = new ObjectMapper();
         prettyMapper = new ObjectMapper();

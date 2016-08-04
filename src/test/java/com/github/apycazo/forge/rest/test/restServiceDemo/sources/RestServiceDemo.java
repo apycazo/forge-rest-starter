@@ -1,4 +1,4 @@
-package com.github.apycazo.forge.rest.test.RestServiceDemo.sources;
+package com.github.apycazo.forge.rest.test.restServiceDemo.sources;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -15,7 +15,6 @@ import java.util.concurrent.ConcurrentHashMap;
 @RequestMapping(value = "${" + RestServiceDemo.MAPPING_PROP + "}", produces = MediaType.APPLICATION_JSON_VALUE)
 public class RestServiceDemo
 {
-
     public static final String MAPPING_PROP = "demo.rest-service.mapping";
 
     private Map<String,String> map = new ConcurrentHashMap<>();
