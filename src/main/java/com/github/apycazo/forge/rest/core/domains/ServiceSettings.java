@@ -46,7 +46,7 @@ public class ServiceSettings
     /**
      * Sanitizes base path and directory segments. If a valid URL cannot be created with base path and/or a directory
      * entry, a MalformedURLException will be thrown.
-     * @throws MalformedURLException
+     * @throws MalformedURLException when a correct URL cannot be instanced.
      */
     @PostConstruct
     protected void setup () throws MalformedURLException

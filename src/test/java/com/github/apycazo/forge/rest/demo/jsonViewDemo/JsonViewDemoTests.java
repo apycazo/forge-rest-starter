@@ -1,7 +1,7 @@
-package com.github.apycazo.forge.rest.test.jsonViewDemo;
+package com.github.apycazo.forge.rest.demo.jsonViewDemo;
 
-import com.github.apycazo.forge.rest.test.jsonViewDemo.sources.JsonViewDemoConfig;
-import com.github.apycazo.forge.rest.test.jsonViewDemo.sources.JsonViewRestController;
+import com.github.apycazo.forge.rest.demo.jsonViewDemo.sources.JsonViewDemoConfig;
+import com.github.apycazo.forge.rest.demo.jsonViewDemo.sources.JsonViewRestController;
 import com.jayway.restassured.RestAssured;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;

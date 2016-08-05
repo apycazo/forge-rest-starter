@@ -1,4 +1,4 @@
-package com.github.apycazo.forge.rest.test.jsonViewDemo.sources;
+package com.github.apycazo.forge.rest.demo.restServiceDemo.sources;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Andres Picazo
  */
 @SpringBootApplication
-public class JsonViewDemoConfig
+public class RestServiceDemoConfig
 {
     public static void main (String [] args)
     {
-        SpringApplication.run(JsonViewDemoConfig.class, args);
+        SpringApplication.run(RestServiceDemoConfig.class, args);
     }
 }

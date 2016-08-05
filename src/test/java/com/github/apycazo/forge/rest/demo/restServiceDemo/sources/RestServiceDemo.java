@@ -1,4 +1,4 @@
-package com.github.apycazo.forge.rest.test.restServiceDemo.sources;
+package com.github.apycazo.forge.rest.demo.restServiceDemo.sources;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

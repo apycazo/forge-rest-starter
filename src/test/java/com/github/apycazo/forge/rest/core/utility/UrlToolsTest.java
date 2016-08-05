@@ -55,7 +55,7 @@ public class UrlToolsTest
     public void sanitizeSegmentsTest ()
     {
         String [] expected = {"/path1", "/path2", "/path3", "/path4"};
-        String [] segments = {"/path1", "path2", null, "/path3/", "path4/?test=true"};
+        String[] segments = {"/path1", "path2", null, "/path3/", "path4/?demo=true"};
 
         String [] result = UrlTools.sanitizeUrlSegments(segments);
 

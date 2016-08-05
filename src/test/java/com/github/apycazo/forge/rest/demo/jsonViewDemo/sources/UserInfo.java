@@ -1,4 +1,4 @@
-package com.github.apycazo.forge.rest.test.jsonViewDemo.sources;
+package com.github.apycazo.forge.rest.demo.jsonViewDemo.sources;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Builder;

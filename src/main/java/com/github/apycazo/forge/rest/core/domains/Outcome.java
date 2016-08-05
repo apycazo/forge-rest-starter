@@ -7,7 +7,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
 
+import java.util.Arrays;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -82,11 +84,14 @@ public class Outcome
         map.put("exceptionName", e.getClass().getName());
         map.put("exceptionMessage", StringUtils.isEmpty(e.getMessage()) ? "message not available" : e.getMessage());
         try {
-            StackTraceElement ste = e.getStackTrace()[0];
-            String location = String.format("%s->%s:%d", ste.getClassName(), ste.getMethodName(), ste.getLineNumber());
-            map.put("location", location);
+            // Add stack elements
+            List<StackTraceElement> stackList = Arrays.asList(e.getStackTrace());
+            stackList.forEach(ste -> {
+                String location = String.format("%s->%s:%d", ste.getClassName(), ste.getMethodName(), ste.getLineNumber());
+                map.put("stack", location);
+            });
         } catch (Exception e2) {
-            map.put("location", "Unknown, stack not available");
+            map.put("stack", "Unknown, stack not available");
         }
         outcome.data = map;
         return outcome;

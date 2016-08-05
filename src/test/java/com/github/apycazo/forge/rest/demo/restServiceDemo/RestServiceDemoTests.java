@@ -1,7 +1,7 @@
-package com.github.apycazo.forge.rest.test.restServiceDemo;
+package com.github.apycazo.forge.rest.demo.restServiceDemo;
 
-import com.github.apycazo.forge.rest.test.restServiceDemo.sources.RestServiceDemo;
-import com.github.apycazo.forge.rest.test.restServiceDemo.sources.RestServiceDemoConfig;
+import com.github.apycazo.forge.rest.demo.restServiceDemo.sources.RestServiceDemo;
+import com.github.apycazo.forge.rest.demo.restServiceDemo.sources.RestServiceDemoConfig;
 import com.jayway.restassured.RestAssured;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;

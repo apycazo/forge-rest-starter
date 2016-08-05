@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.github.apycazo.forge.rest.core.interfaces.ServiceSettings;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import reactor.core.Reactor;
 import reactor.event.Event;
@@ -16,6 +17,7 @@ import java.io.IOException;
  * @author Andres Picazo
  */
 @Slf4j
+@Lazy
 @Service
 public class Manager
 {
@@ -60,10 +62,11 @@ public class Manager
         return settings;
     }
 
-    public void sendEvent (String target, String topic, Object payload)
-    {
-
-    }
+    // TODO: Sends an event to another service event gateway
+//    public void sendEvent (String target, String topic, Object payload)
+//    {
+//
+//    }
 
     public void generateEvent (String topic)
     {
